@@ -28,7 +28,7 @@ jobs:
 
       # Build image
       - name: Build Docker Image
-        run: docker build -t $IMAGE_NAME ./DesafioMxmBackend
+        run: docker build -t $IMAGE_NAME .
 
       # Push image to registry
       - name: Push Docker Image
