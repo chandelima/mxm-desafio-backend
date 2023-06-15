@@ -7,7 +7,7 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["DesafioMxmBackend/DesafioMxmBackend.csproj", "DesafioMxmBackend/"]
+COPY ["DesafioMxmBackend.csproj", "DesafioMxmBackend/"]
 RUN dotnet restore "DesafioMxmBackend/DesafioMxmBackend.csproj"
 COPY . .
 WORKDIR "/src/DesafioMxmBackend"
