@@ -1,4 +1,4 @@
-﻿using DesafioMxmBackend.Services.Interfaces;
+using DesafioMxmBackend.Services.Interfaces;
 using System.Net.Http.Headers;
 
 namespace DesafioMxmBackend.Service;
@@ -40,7 +40,7 @@ public class HttpRequestService : IHttpRequestService
             }
             catch (Exception e)
             {
-                return $"ERRO NO MIDDLEWARE!!! \n ${e.Message}";
+                return $"ERRO DO MIDDLEWARE!!! \n ${e.Message}";
                 throw new Exception(e.Message);
             }
         }
