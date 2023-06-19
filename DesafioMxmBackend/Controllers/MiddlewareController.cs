@@ -18,6 +18,7 @@ public class MiddlewareController : Controller
     /// <summary>
     /// Endpoint responsável pelo consumo de requisições do tipo GET a API da MXM.
     /// </summary>
+    /// <param name="resourcePath">Recebe a URN do endpoint na API da MXM</param>
     [HttpPost]
     [Route("GET")]
     public async Task<string> Get([FromQuery] string resourcePath, [FromBody] object payload)
@@ -28,6 +29,7 @@ public class MiddlewareController : Controller
     /// <summary>
     /// Endpoint responsável pelo consumo de requisições do tipo POST a API da MXM.
     /// </summary>
+    /// <param name="resourcePath">Recebe a URN do endpoint na API da MXM</param>
     [HttpPost]
     [Route("POST")]
     public async Task<string> Post([FromQuery] string resourcePath, [FromBody] object payload)
