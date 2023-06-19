@@ -6,7 +6,6 @@
 - [Desafios](#Desafios)
 - [Features](#Features)
 - [Tecnologias Utilizadas](#Tecnologias-Utilizadas)
-- [Instalação](#Instalação)
 - [Autor](#Autor)
 
 # Descrição
